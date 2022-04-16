@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimpleWeatherApp</string>
+    <string name="add_city">Add city</string>
+    <string name="description">Description</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="windspeed">Windspeed</string>
+    <string name="info_image">⛅︁</string>
+    <string name="celsius">° C</string>
+    <string name="retry">Retry</string>
+    <string name="cities">Cities</string>
+    <string name="city_name">City Name</string>
+    <string name="save">Save</string>
+    <string name="already_added">City Already Added</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="historical_data"> Historical Data</string>
+</resources>

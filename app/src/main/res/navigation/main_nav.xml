@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/citiesFragment">
+
+    <fragment
+        android:id="@+id/citiesFragment"
+        tools:layout="@layout/fragment_cities"
+        android:name="com.example.simpleweatherapp.presentation.cities.CitiesFragment"
+        android:label="CitiesFragment" >
+        <action
+            android:id="@+id/action_citiesFragment_to_cityDetailsFragment"
+            app:destination="@id/cityDetailsFragment" />
+        <action
+            android:id="@+id/action_citiesFragment_to_historicalDataFragment"
+            app:destination="@id/historicalDataFragment" />
+        <action
+            android:id="@+id/action_citiesFragment_to_addCityDialog"
+            app:destination="@id/addCityDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityDetailsFragment"
+        tools:layout="@layout/city_details_fragment"
+        android:name="com.example.simpleweatherapp.presentation.details.CityDetailsFragment"
+        android:label="CityDetailsFragment" >
+        <argument
+            android:name="cityName"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="savedData"
+            app:argType="com.example.simpleweatherapp.data.response.CityResponse"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/historical_data_fragment"
+        android:id="@+id/historicalDataFragment"
+        android:name="com.example.simpleweatherapp.presentation.history.HistoricalDataFragment"
+        android:label="HistoricalDataFragment" >
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_historicalDataFragment_to_cityDetailsFragment"
+            app:destination="@id/cityDetailsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addCityDialog"
+        tools:layout="@layout/dialog_add_city"
+        android:name="com.example.simpleweatherapp.presentation.addcity.AddCityDialog"
+        android:label="AddCityDialog" />
+</navigation>

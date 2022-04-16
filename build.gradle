@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url  "https://dl.bintray.com/rudderstack/rudderstack" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21"
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
+        def nav_version = "2.4.2"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
