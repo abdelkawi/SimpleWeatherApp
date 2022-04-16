@@ -1,10 +1,8 @@
-package com.example.simpleweatherapp.data
+package com.example.simpleweatherapp.data.remote
 
 import com.google.gson.Gson
 import okhttp3.ResponseBody
-import okio.BufferedSource
 import retrofit2.Response
-import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.Exception
 
 

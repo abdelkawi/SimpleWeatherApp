@@ -3,7 +3,6 @@ package com.example.simpleweatherapp.presentation.details
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -14,8 +13,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import coil.load
 import com.example.simpleweatherapp.R
-import com.example.simpleweatherapp.data.Result
-import com.example.simpleweatherapp.data.response.CityResponse
+import com.example.simpleweatherapp.data.remote.Result
+import com.example.simpleweatherapp.data.remote.response.CityResponse
 import com.example.simpleweatherapp.databinding.CityDetailsFragmentBinding
 import com.example.simpleweatherapp.domain.toLocalWeather
 import com.example.simpleweatherapp.presentation.WeatherViewModel

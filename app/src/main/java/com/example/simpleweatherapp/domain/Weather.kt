@@ -1,11 +1,10 @@
 package com.example.simpleweatherapp.domain
 
 import com.example.simpleweatherapp.data.local.LocalWeather
-import com.example.simpleweatherapp.data.response.CityResponse
-import com.example.simpleweatherapp.data.response.Main
-import com.example.simpleweatherapp.data.response.WeatherItem
-import com.example.simpleweatherapp.data.response.Wind
-import java.sql.Timestamp
+import com.example.simpleweatherapp.data.remote.response.CityResponse
+import com.example.simpleweatherapp.data.remote.response.Main
+import com.example.simpleweatherapp.data.remote.response.WeatherItem
+import com.example.simpleweatherapp.data.remote.response.Wind
 
 fun CityResponse.toLocalWeather(): LocalWeather {
     return LocalWeather(

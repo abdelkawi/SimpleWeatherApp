@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.simpleweatherapp.R
-import com.example.simpleweatherapp.data.Result
+import com.example.simpleweatherapp.data.remote.Result
 import com.example.simpleweatherapp.databinding.DialogAddCityBinding
 import com.example.simpleweatherapp.presentation.WeatherViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

@@ -1,4 +1,4 @@
-package com.example.simpleweatherapp.data
+package com.example.simpleweatherapp.data.remote
 
 sealed class Result<out T> {
     data class Success<out T>(val data: T) : Result<T>()

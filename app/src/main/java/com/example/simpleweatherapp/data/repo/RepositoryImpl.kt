@@ -2,7 +2,7 @@ package com.example.simpleweatherapp.data.repo
 
 import androidx.lifecycle.LiveData
 import com.example.simpleweatherapp.data.local.LocalDataSource
-import com.example.simpleweatherapp.data.RemoteDataSource
+import com.example.simpleweatherapp.data.remote.RemoteDataSource
 import com.example.simpleweatherapp.data.local.LocalWeather
 import com.example.simpleweatherapp.data.local.SearchItem
 import com.example.simpleweatherapp.domain.Repository

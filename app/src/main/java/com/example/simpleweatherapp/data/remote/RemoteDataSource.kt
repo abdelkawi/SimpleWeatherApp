@@ -1,6 +1,6 @@
-package com.example.simpleweatherapp.data
+package com.example.simpleweatherapp.data.remote
 
-import com.example.simpleweatherapp.data.response.CityResponse
+import com.example.simpleweatherapp.data.remote.response.CityResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

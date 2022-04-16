@@ -1,13 +1,11 @@
 package com.example.simpleweatherapp.di
 
-import android.app.Application
 import android.content.Context
-import android.content.SharedPreferences
 import androidx.room.Room
 import com.example.simpleweatherapp.BuildConfig
-import com.example.simpleweatherapp.data.ApiService
+import com.example.simpleweatherapp.data.remote.ApiService
 import com.example.simpleweatherapp.data.local.LocalDataSource
-import com.example.simpleweatherapp.data.RemoteDataSource
+import com.example.simpleweatherapp.data.remote.RemoteDataSource
 import com.example.simpleweatherapp.data.local.AppDatabase
 import com.example.simpleweatherapp.data.local.SearchHistoryDao
 import com.example.simpleweatherapp.data.local.WeatherDao
